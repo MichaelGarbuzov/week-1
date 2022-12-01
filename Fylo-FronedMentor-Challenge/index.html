@@ -1,22 +1,80 @@
+<!-- Michael Garbuzov -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/week-1-master/Fylo-FronedMentor-Challenge/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Fylo data storage component</title>
-</head>
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="/Fylo-FronedMentor-Challenge/style.css " />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  You’ve used 815 GB of your storage
+    <title>Fylo data storage component</title>
+  </head>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-</body>
+  <body>
+    <img
+      src="/Fylo-FronedMentor-Challenge/assets/logo.svg"
+      alt=""
+      class="logo"
+    />
+    <div class="mini-logos">
+      <img
+        src="/Fylo-FronedMentor-Challenge/assets/icon-document.svg"
+        alt=""
+        class="document"
+      />
+      <img
+        src="/Fylo-FronedMentor-Challenge/assets/icon-folder.svg"
+        alt=""
+        class="folder"
+      />
+      <img
+        src="/Fylo-FronedMentor-Challenge/assets/icon-upload.svg"
+        alt=""
+        class="upload"
+      />
+    </div>
+
+    <div class="left-box"></div>
+
+    <div class="right-box">
+      <div class="range-lvl"></div>
+      <div class="dot"></div>
+      <div class="range"></div>
+
+      <div class="text-container">
+        <p class="start">0 GB</p>
+        <p class="end">1000 GB</p>
+      </div>
+
+      <div class="bubble">185 <span class="gb-right">GB left</span></div>
+      <div class="storage">
+        You’ve used <span class="gb">815 GB</span> of your storage
+      </div>
+    </div>
+  </body>
 </html>
