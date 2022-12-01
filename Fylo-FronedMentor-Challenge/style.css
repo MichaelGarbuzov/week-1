@@ -193,4 +193,18 @@ body {
     bottom: 48px;
     left: 47px;
   }
+
+  body {
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+  }
+
+  .left-box {
+    bottom: 232px;
+    padding: 8px;
+  }
 }
