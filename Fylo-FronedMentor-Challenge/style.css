@@ -92,37 +92,36 @@ body {
   bottom: 72px;
 }
 
-.range {
-  width: 435px;
-  height: 13px;
-  position: relative;
-  border-radius: 4px;
-  background-color: hsl(231, 53%, 17%);
-  padding: 1px;
-  top: 55px;
-}
-
 .range-lvl {
-  width: 351px;
+  /* width: 40%; */
   height: 13px;
   position: absolute;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 1px;
   top: 75px;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   z-index: 2;
+
+  
 }
 
 .dot {
   background-color: #ffff;
   float: right;
-  margin: 54px 2px 1px 2px;
-  width: 18px;
-  position: relative;
+  margin: 1px 1px;
+  width: 13px;
   border-radius: 100%;
-  z-index: 3;
-  height: 18px;
-  right: 86px;
+  height: 11px;
+}
+
+.range {
+  width: 435px;
+  height: 13px;
+  position: relative;
+  border-radius: 10px;
+  background-color: hsl(231, 53%, 17%);
+  padding: 1px;
+  top: 55px;
 }
 
 .start {
@@ -134,7 +133,7 @@ body {
 
 .end {
   position: absolute;
-  left: 395px;
+  left: 413px;
   bottom: 8px;
   color: #ffff;
   font-size: 15px;
@@ -148,7 +147,7 @@ body {
   background: #ffffff;
   color: #000000;
   font-family: "Raleway";
-  font-size: 37px;
+  font-size: 30px;
   line-height: 78px;
   text-align: center;
   width: 202px;
@@ -177,7 +176,14 @@ body {
   color: hsl(229, 7%, 55%);
 }
 
-@media only screen and (max-width: 960px) {
+.upload-description {
+  position: absolute;
+  top: 32px;
+  font-size: 17px;
+  color: #ffff;
+}
+
+@media only screen and (max-width: 990px) {
   .right-box {
     bottom: 73px;
     display: flex;

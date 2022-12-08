@@ -16,7 +16,6 @@
       rel="stylesheet"
     />
 
-    <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="/Fylo-FronedMentor-Challenge/style.css " />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,43 +37,54 @@
   <body>
     <img
       src="/Fylo-FronedMentor-Challenge/assets/logo.svg"
-      alt=""
+      alt="logo-icon"
       class="logo"
     />
     <div class="mini-logos">
       <img
         src="/Fylo-FronedMentor-Challenge/assets/icon-document.svg"
-        alt=""
+        alt="document-icon"
         class="document"
       />
       <img
         src="/Fylo-FronedMentor-Challenge/assets/icon-folder.svg"
-        alt=""
+        alt="folder-icon"
         class="folder"
       />
-      <img
-        src="/Fylo-FronedMentor-Challenge/assets/icon-upload.svg"
-        alt=""
-        class="upload"
-      />
+      <label for="fileUpload">
+        <img
+          src="/Fylo-FronedMentor-Challenge/assets/icon-upload.svg"
+          alt="upload-icon  "
+          class="upload"
+        />
+        <p class="upload-description">upload image</p>
+      </label>
+      <input type="file" id="fileUpload" style="display: none" onchange="validateFileSize()" />
+      </p>
+  
     </div>
 
     <div class="left-box"></div>
 
     <div class="right-box">
-      <div class="range-lvl"></div>
-      <div class="dot"></div>
+      <div class="range-lvl">
+        <div class="dot"></div>
+      </div>
+
       <div class="range"></div>
 
       <div class="text-container">
-        <p class="start">0 GB</p>
-        <p class="end">1000 GB</p>
+        <p class="start" id="minStorage">0 MB</p>
+        <p class="end" id="maxStorage">10 MB</p>
       </div>
 
-      <div class="bubble">185 <span class="gb-right">GB left</span></div>
+      <div class="bubble" id="storageid">
+         <span class="gb-right">10 MB left</span>
+      </div>
       <div class="storage">
-        You’ve used <span class="gb">815 GB</span> of your storage
+        You’ve used  <span class="gb" id="storageInUse"></span>MB of your storage
       </div>
     </div>
+    <script src="/Fylo-FronedMentor-Challenge/app.js"></script>
   </body>
 </html>
