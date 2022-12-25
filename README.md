@@ -17,6 +17,6 @@ and will also alert if the file is not an image.
 <a href="https://ibb.co/ZTVCHNN"><img src="https://i.ibb.co/nkbS3RR/upload-Photo.png" alt="upload-Photo" border="0"></a>
 
 
-## Eror message if the user try upload not image file :
+## Eror message if the user try upload not an image file :
 
 <a href="https://ibb.co/VJNTJyc"><img src="https://i.ibb.co/17nT7Vt/notPhoto.jpg" alt="notPhoto" border="0"></a>
